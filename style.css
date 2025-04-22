@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(209, 239, 251);
+    color: black;
+    font-family: 'poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(5, 74, 143);
+}
+
+.left {
+    font-size: 1.5rem;
+    color: antiquewhite;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(250, 35, 35);
+    font-size: 1.02rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: fit-content;
+}
+
+.firstsection>div {
+    width: 30%;
+
+}
+
+.leftsection {
+    font-size: 3rem;
+    margin: 70px 0;
+}
+
+.rightsection img {
+    width: 80%;
+}
+
+.purple {
+    color: rgb(122, 36, 169);
+}
+
+#element {
+    color: rgb(122, 36, 169);
+}
+
+.secondsection {
+    max-width: 80ww;
+    margin: auto;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftsection img {
+    width: 50%;
+    align-items: center;
+
+}
+
+.rightsection {
+    font-size: 1.2rem;
+    margin-right: 5%;
+    text-align: center;
+
+}
+
+.rightsection>div {
+    width: 30%;
+}
+
+.thirdsection {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.leftsection {
+    font-size: 2rem;
+    margin: 70px;
+}
+
+.project {
+    color: rgb(138, 8, 163);
+}
+
+.rightsection img {
+    width: 50%;
+}
+
+.fourthsection {
+    text-align: center;
+    height: 20%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#resume {
+    text-align: center;
+    background-color: rgb(3, 3, 47);
+
+}
+
+#resume a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: rgb(6, 6, 86);
+    border-radius: 7px;
+}
+
+#resume a:hover {
+    background: rgb(126, 47, 200);
+}
+
+.fifthsection {
+    text-align: center;
+    margin-top: 20px;
+    height: 20%s;
+
+}
+
+#contact {
+
+    background-color: rgb(154, 218, 243);
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(1, 1, 29);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 80%;
+}
