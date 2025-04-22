@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b75e5e;
+}
+header {
+    background-color: #e10707;
+    color: rgb(246, 241, 241);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color:rgb(246, 238, 238);
+    text-decoration: none;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main {
+    flex: 3;
+    padding-right: 20px;
+}
+article {
+    background-color: #b75e5e;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article h2, article h3 {
+    margin-top: 0;
+}
+aside {
+    flex: 1;
+    padding-left: 20px;
+}
+aside section {
+    background-color:  #b75e5e;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+aside .tags a {
+    display: inline-block;
+    background-color: #b75e5e;
+    color: rgb(14, 13, 13);
+    padding: 5px 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    background-color: #4a0404;
+    color:rgb(248, 243, 243);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    main {
+        padding-right: 0;
+    }
+    aside {
+        padding-left: 0;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        <main>
+            <article>
+                <h2>The Benefits of Learning to Code</h2>
+                <p>Coding is a valuable skill that can open up many opportunities in today's technology-driven world. Whether you want to build your own website, develop software, or understand the inner workings of the tech you use daily, learning to code can be incredibly beneficial.</p>
+                <h3>1. Enhanced Problem-Solving Skills</h3>
+                <p>Programming teaches you to break down complex problems into manageable parts and solve them systematically. This analytical approach is useful in many areas of life beyond coding.</p>
+                <h3>2. Career Opportunities</h3>
+                <p>The demand for skilled programmers is high, and there are many career paths available for those with coding expertise. From web development to data science, coding skills are highly sought after in the job market.</p>
+                <h3>3. Creativity and Innovation</h3>
+                <p>Coding allows you to create new tools, applications, and websites. It empowers you to turn your ideas into reality and contribute to technological advancements.</p>
+                <h3>4. Understanding Technology</h3>
+                <p>Learning to code helps you understand how the technology you use every day works. This knowledge can make you a more informed user and help you troubleshoot issues more effectively.</p>
+            </article>
+        </main>
+        <aside>
+            <section>
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="#">How to Start with Python</a></li>
+                    <li><a href="#">Top 10 JavaScript Frameworks</a></li>
+                    <li><a href="#">Understanding Machine Learning</a></li>
+                    <li><a href="#">Introduction to Web Development</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Popular Tags</h2>
+                <div class="tags">
+                    <a href="#">Coding</a>
+                    <a href="#">Programming</a>
+                    <a href="#">Web Development</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#">Python</a>
+                    <a href="#">Machine Learning</a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
