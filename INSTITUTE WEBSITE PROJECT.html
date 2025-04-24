@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Axis Colleges</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #e9f9e4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background: #176a3d;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-container img {
+      height: 45px;
+    }
+
+    nav h1 {
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #f1fff2;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffdf2b;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #a1f0b5, #d6f5d6);
+      color: #155e2d;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #176a3d;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .slide {
+      width: 100%;
+      display: none;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(23, 106, 61, 0.8);
+      color: white;
+      border: none;
+      font-size: 2rem;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 50%;
+    }
+
+    .slider .prev {
+      left: 10px;
+    }
+
+    .slider .next {
+      right: 10px;
+    }
+
+    .slider button:hover {
+      background-color: rgba(23, 106, 61, 1);
+    }
+
+    #departments ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    #departments li {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    #departments li:hover {
+      transform: translateY(-6px);
+      background-color: #effff3;
+    }
+
+    #departments img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    #departments h3 {
+      margin-bottom: 8px;
+      color: #155e2d;
+    }
+
+    #departments p {
+      color: #444;
+    }
+
+    #contact p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #031e0f;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.95rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-container">
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeCWkcOkr7cVuAcc0lHd4RGe-L-mc5rhnVZ9A5ziS6j08uBa-Roi7xnLmytEzonFQ02rQ&usqp=CAU alt="Axis Logo">
+      <h1>Axis Colleges</h1>
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src=https://media.licdn.com/dms/image/v2/C4D05AQHTDhE0UonziA/videocover-low/videocover-low/0/1642583262186?e=2147483647&v=beta&t=bKpvWY-DUSgigaWSuz8az4BB1EBGrzdW8R35w-O06G4 alt="Axis Campus">
+    <h2>Welcome to Axis Colleges</h2>
+    <p>Leading the way in innovation, excellence, and education. Empowering students for a brighter tomorrow.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="slider">
+      <img src=https://media.collegedekho.com/media/img/institute/crawled_images/img20140629wa0007_copy1.jpg class="slide active" alt="Axis Campus 1">
+      <img src=https://media.collegedekho.com/media/img/institute/crawled_images/None/26300-Axis-Business-School-720x405.jpg class="slide" alt="Axis Campus 2">
+     
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+    <p style="text-align: center; max-width: 800px; margin: 20px auto 0;">
+      Axis Colleges is a hub of academic excellence, dedicated to nurturing young minds and shaping the future.
+      Our dynamic curriculum and experienced faculty ensure our students are prepared for global challenges.
+    </p>
+  </section>
+
+  <!-- Departments -->
+  <section id="departments">
+    <h2>Departments</h2>
+    <ul>
+      <li>
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUQOSH5FFD9eBZsktEIs8kriT9fvwn8WqDA&s alt="CSE">
+        <h3>Computer Science and Engineering</h3>
+        <p>Innovative programs in AI, Data Science, and Full Stack Development.</p>
+      </li>
+      <li>
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSge1ZYYWjacset_5Cpcad_ZZodMxHw1mv59g&s alt="EEE">
+        <h3>Electrical & Electronics Engineering</h3>
+        <p>Advanced study of circuits, machines, and embedded systems.</p>
+      </li>
+      <li>
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRdeG-NBNGpmApjzeLl4NC3cI0lGMG3VbTLg&s alt="Mechanical">
+        <h3>Mechanical Engineering</h3>
+        <p>Focus on automation, manufacturing, and thermal sciences.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@axiscolleges.in</p>
+    <p>Phone: +91 8853777774</p>
+    <p>Address: Rooma, NH-2, Milestone- 478, Kanpur,
+      Uttar Pradesh - 209402</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Social Media Footer -->
+<div style="background-color: #155e2d; padding: 20px 0; text-align: center;">
+  <h3 style="color: #fff; margin-bottom: 10px;">Follow Us</h3>
+  <div style="display: flex; justify-content: center; gap: 20px; font-size: 1.5rem;">
+    <a href="https://www.facebook.com/axiscolleges" target="_blank" style="color: white; text-decoration: none;">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="https://www.instagram.com/axiscolleges" target="_blank" style="color: white; text-decoration: none;">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.twitter.com/axiscolleges" target="_blank" style="color: white; text-decoration: none;">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+    <a href="https://www.linkedin.com/school/axiscolleges/" target="_blank" style="color: white; text-decoration: none;">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2024 Axis Colleges. All rights reserved.
+</footer>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll("a[href^='#']").forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    // Image Slider Logic
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+
+    document.querySelector(".next").addEventListener("click", () => {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add("active");
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      slides[currentSlide].classList.add("active");
+    });
+  </script>
+</body>
+</html>
